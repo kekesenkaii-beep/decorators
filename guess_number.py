@@ -51,6 +51,8 @@ def game(username: str, total_games: int) -> None:
                 get_statistics(total_games, username=username)
             case 'answer':
                 get_right_answer(number, username=username)
+            case 'help':
+                print('Список доступных команд: stop')
             case _:
                 try:
                     guess = int(user_input)
